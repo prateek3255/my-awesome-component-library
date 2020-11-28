@@ -1,0 +1,16 @@
+{
+  "name": "storybook-demo",
+  "version": "1.0.0",
+  "description": "A stroybook 6 with TypeScript demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stroybook",
+    "react",
+    "typescript"
+  ],
+  "author": "Prateek Surana",
+  "license": "MIT"
+}
