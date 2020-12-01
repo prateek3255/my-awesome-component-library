@@ -1,5 +1,5 @@
 {
-  "name": "storybook-demo",
+  "name": "my-awesome-component-library",
   "version": "1.0.0",
   "description": "A stroybook 6 with TypeScript demo",
   "main": "index.js",
@@ -12,5 +12,15 @@
     "typescript"
   ],
   "author": "Prateek Surana",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
 }
