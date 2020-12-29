@@ -14,7 +14,7 @@
   },
   "np": {
     "publish": false,
-    "yolo": true
+    "tests": false
   },
   "keywords": [
     "stroybook",
