@@ -9,3 +9,7 @@ This is a template to develop and release a react component. This also includes 
    https://github.com/organizations/upnotes-io/settings/secrets/actions/new
 4. Create a new tag and use that tag to create the release. Creating a new release will trigger the [workflow](https://github.com/upnotes-io/react-component-template/blob/main/.github/workflows/npm-publish.yml). 
 
+### Publishing to github pages:
+Adding deploy keys to your repo:
+1. https://github.com/JamesIves/github-pages-deploy-action/tree/dev#using-an-ssh-deploy-key-
+2. https://docs.github.com/en/developers/overview/managing-deploy-keys#setup-2
