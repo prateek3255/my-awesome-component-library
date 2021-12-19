@@ -1,6 +1,6 @@
 {
   "name": "upnotes-react-component-template",
-  "version": "0.1.15",
+  "version": "0.1.17",
   "description": "A storybook 6 with TypeScript demo",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -8,11 +8,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "build": "rollup -c",
-    "prepublishOnly": "yarn build",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "prepublishOnly": "yarn build"
   },
+  "files": [
+    "src",
+    "lib"
+  ],
   "np": {
     "publish": false,
     "tests": false
@@ -46,6 +49,5 @@
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
-  },
-  "dependencies": {}
+  }
 }
