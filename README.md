@@ -1,5 +1,12 @@
 This is a template to develop and release a react component. This also includes github action for releasing the npm module.
 
+Storybook 
+https://upnotes-io.github.io/my-awesome-component-library/
+
+![image](https://user-images.githubusercontent.com/5221843/147892813-146197d8-9385-4ddf-a928-5eb7e55a051a.png)
+
+
+
 ## Step to release the npm module
 1. Create a new account in npm.
    https://www.npmjs.com/signup
