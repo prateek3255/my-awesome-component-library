@@ -1,17 +1,21 @@
 {
   "name": "my-awesome-component-library",
-  "version": "1.0.3",
-  "description": "A stroybook 6 with TypeScript demo",
+  "version": "1.1.0",
+  "description": "A storybook 6 with TypeScript demo",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "build": "rollup -c",
     "prepublishOnly": "yarn build"
   },
+  "files": [
+    "src",
+    "lib"
+  ],
   "np": {
     "publish": false,
     "tests": false
@@ -45,6 +49,5 @@
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
-  },
-  "dependencies": {}
+  }
 }

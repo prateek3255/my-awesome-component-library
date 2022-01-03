@@ -1,14 +1,15 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "outDir": "lib",
+      "rootDir": "./src",
+      "outDir": "./lib",
       "lib": [
         "dom",
         "dom.iterable",
         "esnext"
       ],
       "declaration": true,
-      "declarationDir": "lib",
+      "declarationDir": "./",
       "allowJs": true,
       "skipLibCheck": true,
       "esModuleInterop": true,
