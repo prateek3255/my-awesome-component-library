@@ -20,3 +20,8 @@ https://upnotes-io.github.io/my-awesome-component-library/
 Adding deploy keys to your repo:
 1. https://github.com/JamesIves/github-pages-deploy-action/tree/dev#using-an-ssh-deploy-key-
 2. https://docs.github.com/en/developers/overview/managing-deploy-keys#setup-2
+
+### Used by 
+1. https://github.com/upnotes-io/react-todo - A generic todo list component for react. This is being used in an electron based app: https://upnotes.io
+
+Please create a PR if you are using this template in your open source project.
