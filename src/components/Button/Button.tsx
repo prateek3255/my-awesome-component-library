@@ -1,15 +1,16 @@
 import React from "react";
+import classNames from "classnames";
 import "./button.css";
 
-export interface ButtonProps  {
+export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean;
+  type?: "primary" | "secondary";
   /**
    * What background color to use
    */
-  backgroundColor?: string;
+  textColor?: string;
   /**
    * How large should the button be?
    */
@@ -21,31 +22,28 @@ export interface ButtonProps  {
   /**
    * Optional click handler
    */
-  onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => void;
-};
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
 
 /**
  * Primary UI component for user interaction
  */
 const Button = ({
-  primary = true,
-  backgroundColor,
+  type = "primary",
+  textColor,
   size = "medium",
   onClick,
   label,
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
   return (
     <button
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
+      className={classNames(
+        "storybook-button",
+        `storybook-button--${size}`,
+        `storybook-button--${type}`
       )}
-      style={backgroundColor ? { backgroundColor }: {}}
+      style={textColor ? { color: textColor } : {}}
       onClick={onClick}
     >
       {label}
