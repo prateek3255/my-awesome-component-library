@@ -1,9 +1,10 @@
 module.exports = {
-  "stories": [
-    "../src/**/*.stories.tsx"
-  ],
-  "addons": [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
-}
+  core: {
+    builder: 'webpack5'
+  },
+  "stories": ["../src/**/*.stories.tsx"],
+  "addons": ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-postcss"],
+  docs: {
+    autodocs: true
+  }
+};
