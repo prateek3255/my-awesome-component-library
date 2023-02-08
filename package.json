@@ -2,7 +2,6 @@
   "name": "my-awesome-component-library",
   "version": "1.0.3",
   "description": "A stroybook 6 with TypeScript demo",
-  "type": "module",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
