@@ -1,21 +1,33 @@
 import React from "react";
-import { ComponentMeta, ComponentStory } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
 
-export default {
+const meta: Meta<typeof Button> = {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    textColor: { control: 'color' },
+    textColor: { control: "color" },
+    onClick: { action: "clicked" },
   },
-} as ComponentMeta<typeof Button>;
+};
 
-// Create a master template for mapping args to render the Button component
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+export default meta;
+
+type Story = StoryObj<typeof Button>;
 
 // Reuse that template for creating different stories
-export const Primary = Template.bind({});
-Primary.args = { label: "Primary 😃", size: "large", type: "primary" };
+export const Primary: Story = {
+  args: {
+    label: "Primary 😃",
+    size: "large",
+    type: "primary",
+  },
+};
 
-export const Secondary = Template.bind({});
-Secondary.args = { ...Primary.args, type: "secondary", label: "Secondary 😇" };
+export const Secondary: Story = {
+  args: {
+    ...Primary.args,
+    type: "secondary",
+    label: "Secondary 😇",
+  },
+};
